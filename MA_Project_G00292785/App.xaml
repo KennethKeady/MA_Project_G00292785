@@ -1,0 +1,3 @@
+<Application x:Class="MA_Project_G00292785.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"	xmlns:local="using:MA_Project_G00292785">	<Application.Resources>		<ai:TelemetryClient x:Key="ApplicationInsightsBootstrapper" xmlns:ai="using:Microsoft.ApplicationInsights"/>	</Application.Resources>
+
+</Application>
