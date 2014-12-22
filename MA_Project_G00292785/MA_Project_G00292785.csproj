@@ -117,6 +117,7 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="ApplicationInsights.config" />
+    <None Include="Images\Premier League\Thumbs.db" />
     <None Include="MA_Project_G00292785_TemporaryKey.pfx" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -125,6 +126,27 @@
     <Content Include="Assets\SmallLogo.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\StoreLogo.scale-100.png" />
+    <Content Include="Images\Premier League\Arsenal.png" />
+    <Content Include="Images\Premier League\Aston Villa.png" />
+    <Content Include="Images\Premier League\Burnley.png" />
+    <Content Include="Images\Premier League\Chelsea.png" />
+    <Content Include="Images\Premier League\Crystal Palace.png" />
+    <Content Include="Images\Premier League\Everton.png" />
+    <Content Include="Images\Premier League\Hull City.png" />
+    <Content Include="Images\Premier League\Leicester City.png" />
+    <Content Include="Images\Premier League\Liverpool.png" />
+    <Content Include="Images\Premier League\Manchester City.png" />
+    <Content Include="Images\Premier League\Manchester United.png" />
+    <Content Include="Images\Premier League\Newcastle United.PNG" />
+    <Content Include="Images\Premier League\QPR.png" />
+    <Content Include="Images\Premier League\Southampton.png" />
+    <Content Include="Images\Premier League\Spurs.png" />
+    <Content Include="Images\Premier League\Stoke.png" />
+    <Content Include="Images\Premier League\Sunderland.png" />
+    <Content Include="Images\Premier League\Swansea.png" />
+    <Content Include="Images\Premier League\West Brom.png" />
+    <Content Include="Images\Premier League\West Ham.png" />
+    <Content Include="Images\Premier-League.png" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -146,7 +168,20 @@
     <Reference Include="Microsoft.ApplicationInsights.Extensibility.Windows">
       <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsStore.0.12.0-build17386\lib\win81\Microsoft.ApplicationInsights.Extensibility.Windows.winmd</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Data.Edm">
+      <HintPath>..\packages\Microsoft.Data.Edm.5.6.2\lib\portable-net40+sl5+wp8+win8+wpa\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData">
+      <HintPath>..\packages\Microsoft.Data.OData.5.6.2\lib\portable-net40+sl5+wp8+win8+wpa\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>..\packages\WindowsAzure.Storage.4.3.0\lib\win8\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Spatial">
+      <HintPath>..\packages\System.Spatial.5.6.2\lib\portable-net40+sl5+wp8+win8+wpa\System.Spatial.dll</HintPath>
+    </Reference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

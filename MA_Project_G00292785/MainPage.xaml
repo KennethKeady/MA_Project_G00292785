@@ -7,7 +7,142 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Grid Background="Navy">
+        <Canvas x:Name="HomeCanvas" Visibility="Visible">
+            <TextBlock FontSize="48" Width="1287" TextAlignment="Center" Visibility="Visible" Canvas.Left="40" Canvas.Top="44" RenderTransformOrigin="0.137,0.368" Text="Welcome To The Premier League Guess The Crest Quiz"/>
+            <Image x:Name="PremierLeague" Source="Images/Premier-League.png" Visibility="Visible"  Canvas.Left="575" Canvas.Top="255" Tapped="PremierLeague_Tapped"/>
+            <TextBlock FontSize="48" Width="1287" TextAlignment="Center" Visibility="Visible" Canvas.Left="40" Canvas.Top="602" RenderTransformOrigin="0.137,0.368" Text="Please Click The Logo Above To Start"/>
+        </Canvas>
+
+        <Canvas x:Name="PremierLeagueCanvas" Visibility="Collapsed" >
+            <AppBarButton Icon="Home" Label="Home" Tapped="AppBarButton_Tapped"/>
+            <TextBlock Name="Score" Canvas.Left="1200" Canvas.Top="50" FontSize="24"></TextBlock>
+            <Image x:Name="Chelsea" Source="Images/Premier League/Chelsea.png" Visibility="Visible" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnChelsea1" Content="Manchester City" Visibility = "Visible" BorderBrush="White" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnChelsea1_Tapped"></Button>
+            <Button x:Name="btnChelsea2" Content="Aston Villa" BorderBrush="White" Visibility = "Visible" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnChelsea2_Tapped"></Button>
+            <Button x:Name="btnChelsea3" Content="Chelsea" BorderBrush="White" Visibility = "Visible" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnChelsea3_Tapped"></Button>
+            <Button x:Name="btnChelsea4" Content="QPR" BorderBrush="White" Visibility = "Visible" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnChelsea4_Tapped"></Button>
+
+            <Image x:Name="ManCity" Source="Images/Premier League/Manchester City.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnCity1" Content="Arsenal" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnCity1_Tapped"></Button>
+            <Button x:Name="btnCity2" Content="Manchester City" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnCity2_Tapped"></Button>
+            <Button x:Name="btnCity3" Content="Liverpool" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnCity3_Tapped"></Button>
+            <Button x:Name="btnCity4" Content="Burnley" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnCity4_Tapped"></Button>
+
+            <Image x:Name="ManUtd" Source="Images/Premier League/Manchester United.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnUtd1" Content="Manchester United" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnUtd1_Tapped"></Button>
+            <Button x:Name="btnUtd2" Content="Arsenal" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnUtd2_Tapped"></Button>
+            <Button x:Name="btnUtd3" Content="Burnley" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnUtd3_Tapped"></Button>
+            <Button x:Name="btnUtd4" Content="Liverpool" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnUtd4_Tapped"></Button>
+
+            <Image x:Name="WestHam" Source="Images/Premier League/West Ham.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnWham1" Content="Aston Villa" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnWham1_Tapped"></Button>
+            <Button x:Name="btnWham2" Content="Burnley" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnWham2_Tapped"></Button>
+            <Button x:Name="btnWham3" Content="Chelsea" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnWham3_Tapped"></Button>
+            <Button x:Name="btnWham4" Content="West Ham" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnWham4_Tapped"></Button>
+
+            <Image x:Name="Southampton" Source="Images/Premier League/Southampton.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnSoton1" Content="Southampton" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnSoton1_Tapped"></Button>
+            <Button x:Name="btnSoton2" Content="Manchester City" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnSoton2_Tapped"></Button>
+            <Button x:Name="btnSoton3" Content="Liverpool" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnSoton3_Tapped"></Button>
+            <Button x:Name="btnSoton4" Content="Burnley" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnSoton4_Tapped"></Button>
+
+            <Image x:Name="Arsenal" Source="Images/Premier League/Arsenal.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnArsenal1" Content="Liverpool" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnArsenal1_Tapped"></Button>
+            <Button x:Name="btnArsenal2" Content="Manchester United" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnArsenal2_Tapped"></Button>
+            <Button x:Name="btnArsenal3" Content="Arsenal" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnArsenal3_Tapped"></Button>
+            <Button x:Name="btnArsenal4" Content="Stoke" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnArsenal4_Tapped"></Button>
+
+            <Image x:Name="Spurs" Source="Images/Premier League/Spurs.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnSpurs1" Content="Swansea" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnSpurs1_Tapped"></Button>
+            <Button x:Name="btnSpurs2" Content="Spurs" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnSpurs2_Tapped"></Button>
+            <Button x:Name="btnSpurs3" Content="Liverpool" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnSpurs3_Tapped"></Button>
+            <Button x:Name="btnSpurs4" Content="Burnley" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnSpurs4_Tapped"></Button>
+
+            <Image x:Name="Swansea" Source="Images/Premier League/Swansea.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnSwan1" Content="Spurs" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnSwan1_Tapped"></Button>
+            <Button x:Name="btnSwan2" Content="Manchester City" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnSwan2_Tapped"></Button>
+            <Button x:Name="btnSwan3" Content="Chelsea" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnSwan3_Tapped"></Button>
+            <Button x:Name="btnSwan4" Content="Swansea" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnSwan4_Tapped"></Button>
+
+            <Image x:Name="Newcastle" Source="Images/Premier League/Newcastle United.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnNewc1" Content="Newcastle United" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnNewc1_Tapped"></Button>
+            <Button x:Name="btnNewc2" Content="Manchester United" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnNewc2_Tapped"></Button>
+            <Button x:Name="btnNewc3" Content="Leicester City" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnNewc3_Tapped"></Button>
+            <Button x:Name="btnNewc4" Content="Hull City" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnNewc4_Tapped"></Button>
+
+            <Image x:Name="Liverpool" Source="Images/Premier League/Liverpool.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnPool1" Content="Arsenal" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnPool1_Tapped"></Button>
+            <Button x:Name="btnPool2" Content="Manchester City" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnPool2_Tapped"></Button>
+            <Button x:Name="btnPool3" Content="Liverpool" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnPool3_Tapped"></Button>
+            <Button x:Name="btnPool4" Content="Manchester United" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnPool4_Tapped"></Button>
+
+            <Image x:Name="Everton" Source="Images/Premier League/Everton.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnEverton1" Content="Chelsea" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnEverton1_Tapped"></Button>
+            <Button x:Name="btnEverton2" Content="Everton" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnEverton2_Tapped"></Button>
+            <Button x:Name="btnEverton3" Content="Leicester" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnEverton3_Tapped"></Button>
+            <Button x:Name="btnEverton4" Content="Burnley" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnEverton4_Tapped"></Button>
+
+            <Image x:Name="AstonVilla" Source="Images/Premier League/Aston Villa.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnVilla1" Content="West Ham" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnVilla1_Tapped"></Button>
+            <Button x:Name="btnVilla2" Content="Burnley" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnVilla2_Tapped"></Button>
+            <Button x:Name="btnVilla3" Content="Liverpool" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnVilla3_Tapped"></Button>
+            <Button x:Name="btnVilla4" Content="Aston Villa" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnVilla4_Tapped"></Button>
+
+            <Image x:Name="Stoke" Source="Images/Premier League/Stoke.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnStoke1" Content="Arsenal" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnStoke1_Tapped"></Button>
+            <Button x:Name="btnStoke2" Content="Stoke" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnStoke2_Tapped"></Button>
+            <Button x:Name="btnStoke3" Content="Liverpool" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnStoke3_Tapped"></Button>
+            <Button x:Name="btnStoke4" Content="Burnley" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnStoke4_Tapped"></Button>
+
+            <Image x:Name="Sunderland" Source="Images/Premier League/Sunderland.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnSunderland1" Content="Sunderland" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnSunderland1_Tapped"></Button>
+            <Button x:Name="btnSunderland2" Content="Manchester City" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnSunderland2_Tapped"></Button>
+            <Button x:Name="btnSunderland3" Content="Arsenal" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnSunderland3_Tapped"></Button>
+            <Button x:Name="btnSunderland4" Content="Manchester United" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnSunderland4_Tapped"></Button>
+
+            <Image x:Name="WestBrom" Source="Images/Premier League/West Brom.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnWestBrom1" Content="Chelsea" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnWestBrom1_Tapped"></Button>
+            <Button x:Name="btnWestBrom2" Content="Everton" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnWestBrom2_Tapped"></Button>
+            <Button x:Name="btnWestBrom3" Content="West Brom" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnWestBrom3_Tapped"></Button>
+            <Button x:Name="btnWestBrom4" Content="Burnley" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnWestBrom4_Tapped"></Button>
+
+            <Image x:Name="QPR" Source="Images/Premier League/QPR.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnQPR1" Content="West Brom" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnQPR1_Tapped"></Button>
+            <Button x:Name="btnQPR2" Content="QPR" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnQPR2_Tapped"></Button>
+            <Button x:Name="btnQPR3" Content="Everton" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnQPR3_Tapped"></Button>
+            <Button x:Name="btnQPR4" Content="Chelsea" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnQPR4_Tapped"></Button>
+
+            <Image x:Name="Palace" Source="Images/Premier League/Crystal Palace.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnPalace1" Content="Arsenal" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnPalace1_Tapped"></Button>
+            <Button x:Name="btnPalace2" Content="Manchester City" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnPalace2_Tapped"></Button>
+            <Button x:Name="btnPalace3" Content="Liverpool" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnPalace3_Tapped"></Button>
+            <Button x:Name="btnPalace4" Content="Crystal Palace" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnPalace4_Tapped"></Button>
+
+            <Image x:Name="Burnley" Source="Images/Premier League/Burnley.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnBurnley1" Content="Burnley" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnBurnley1_Tapped"></Button>
+            <Button x:Name="btnBurnley2" Content="Manchester United" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnBurnley2_Tapped"></Button>
+            <Button x:Name="btnBurnley3" Content="Liverpool" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnBurnley3_Tapped"></Button>
+            <Button x:Name="btnBurnley4" Content="Aston Villa" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnBurnley4_Tapped"></Button>
+
+            <Image x:Name="Hull" Source="Images/Premier League/Hull City.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnHull1" Content="Arsenal" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnHull1_Tapped"></Button>
+            <Button x:Name="btnHull2" Content="Chelsea" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnHull2_Tapped"></Button>
+            <Button x:Name="btnHull3" Content="Hull City" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnHull3_Tapped"></Button>
+            <Button x:Name="btnHull4" Content="Everton" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnHull4_Tapped"></Button>
+
+            <Image x:Name="Leicester" Source="Images/Premier League/Leicester City.png" Visibility="Collapsed" Canvas.Left="570" Canvas.Top="88"/>
+            <Button x:Name="btnLeicester1" Content="Everton" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="414" Width="200" Height="50" Tapped="btnLeicester1_Tapped"></Button>
+            <Button x:Name="btnLeicester2" Content="Leicester City" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="414" Width="200" Height="50" Tapped="btnLeicester2_Tapped"></Button>
+            <Button x:Name="btnLeicester3" Content="Chelsea" BorderBrush="White" Visibility="Collapsed" Canvas.Left="372" Canvas.Top="564" Width="200" Height="50" Tapped="btnLeicester3_Tapped"></Button>
+            <Button x:Name="btnLeicester4" Content="Burnley" BorderBrush="White" Visibility="Collapsed" Canvas.Left="772" Canvas.Top="564" Width="200" Height="50" Tapped="btnLeicester4_Tapped"></Button>
+        </Canvas>
+
+        <Canvas x:Name="ResultCanvas" Visibility="Collapsed">
+            <AppBarButton Icon="Home" Label="Home" Tapped="AppBarButton_Tapped"/>
+            <TextBlock Name="Result" Canvas.Left="420" Canvas.Top="140" TextAlignment="Center" FontSize="60" Width="500" Height="600" TextWrapping="WrapWholeWords"></TextBlock>
+            <Button x:Name="TryAgain"  FontSize="40" Content="Click Here To Start Again" BorderBrush="White" Tapped="TryAgain_Tapped" Canvas.Left="439" Canvas.Top="641"></Button>
+        </Canvas>
     </Grid>
 </Page>
