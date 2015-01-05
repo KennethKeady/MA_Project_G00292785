@@ -13,12 +13,10 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
-
 namespace MA_Project_G00292785
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// Premier League Guess The Crest Game
     /// </summary>
     public sealed partial class MainPage : Page
     {
@@ -1426,7 +1424,7 @@ namespace MA_Project_G00292785
 
             else
             {
-                Result.Text = "Hard luck, you have scored " + score.ToString() + " out of 20. Try Again";
+                Result.Text = "Hard luck, you have scored " + score.ToString() + " out of 20. Keep Practising";
             }
 
             ResultCanvas.Visibility = Visibility.Visible;
