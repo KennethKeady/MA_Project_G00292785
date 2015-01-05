@@ -14,9 +14,12 @@
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>MA_Project_G00292785_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>MA_Project_G00292785_StoreKey.pfx</PackageCertificateKeyFile>
     <NuGetPackageImportStamp>6dc2d14b</NuGetPackageImportStamp>
     <ApplicationInsightsResourceId>/subscriptions/27be665f-5876-4dfb-9d5f-7cc518485ef2/resourcegroups/Default-ApplicationInsights-CentralUS/providers/microsoft.insights/components/MA_Project_G00292785</ApplicationInsightsResourceId>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>6F054AF3BB3D0C01F1988D7727B68378776874B4</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -118,6 +121,7 @@
     </AppxManifest>
     <None Include="ApplicationInsights.config" />
     <None Include="Images\Premier League\Thumbs.db" />
+    <None Include="MA_Project_G00292785_StoreKey.pfx" />
     <None Include="MA_Project_G00292785_TemporaryKey.pfx" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -147,6 +151,7 @@
     <Content Include="Images\Premier League\West Brom.png" />
     <Content Include="Images\Premier League\West Ham.png" />
     <Content Include="Images\Premier-League.png" />
+    <None Include="Package.StoreAssociation.xml" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
